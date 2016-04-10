@@ -1,0 +1,25 @@
+{
+  "name": "Slack Invite Automation",
+  "description": "A tiny web application to invite a user into your slack team.",
+  "repository": "https://github.com/wwcodeatx/wwcatx-slack",
+  "keywords": ["node", "slack", "invite"],
+  "env": {
+    "COMMUNITY_NAME": {
+      "description": "WWCode ATX",
+      "value": "wwc-atx"
+    },
+    "SLACK_URL": {
+      "description": "Our slack url wwc-atx.slack.com",
+      "value": "wwc-atx.slack.com"
+    },
+    "SLACK_TOKEN": {
+      "description": "access token of slack, You can generate it in https://api.slack.com/web#auth",
+      "value": ""
+    },
+    "INVITE_TOKEN": {
+      "description": "Shared invite token used to get access. Leave blank if you don't want users to have to provide a token.",
+      "value": "",
+      "required": false
+    }
+  }
+}
