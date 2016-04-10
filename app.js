@@ -4,12 +4,14 @@ var express = require('express'),
     logger = require('morgan'),
     cookieParser = require('cookie-parser'),
     bodyParser = require('body-parser'),
+    dot = require('dotenv').config(), // must be instantiated before config
     config = require('./config');
     i18n = require("i18n");
 
 var routes = require('./routes/index');
 
 var app = express();
+
 
 i18n.configure({
     defaultLocale: "en",
